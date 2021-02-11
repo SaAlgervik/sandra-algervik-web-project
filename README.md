@@ -1,2 +1,2 @@
-# Sandra-Algervik-Web-Project
+# Sandra Algervik Web Project
 Projekt webbutveckling
