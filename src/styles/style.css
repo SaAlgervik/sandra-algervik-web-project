@@ -1,0 +1,20 @@
+#wrapper{
+    
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px;
+}
+.logInDiv{
+    text-align: center;
+}
+input{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+button{
+    margin-top: 1rem;
+}
