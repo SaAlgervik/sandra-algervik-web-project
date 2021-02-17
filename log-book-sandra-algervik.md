@@ -20,5 +20,22 @@ Sill haven really what AIP i am going to use for the project but i have started 
 
 
 
+### Tuesday 2021-05-16
+
+Started the day to make the website easier to handle when resize up and down. Then making the layout work as i wanted to. Having some trouble making the text show the way i wanted to. 
+Started looking around how to make the log in work as well but.
+
+### Wednesday  2021-05-17
+
+Started adding some function to the buttons and learning how to implement JavaScript to work the way i want it to. Making the picture stay the same even if i change the content in the div. Just working my way around how things work and all the ways i can use different elements in JavaScript 
+
+
+
+
+
+
+
+
+
 
 

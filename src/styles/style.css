@@ -53,8 +53,6 @@ body{
     width: 100% ;
     padding: 1rem;
     
-    
-    
 }
 .main_textSection{
     flex: 1;
@@ -76,12 +74,16 @@ body{
     width: 50%;
     border-top-right-radius: 10px ;
     border-bottom-right-radius: 10px;
+  
 }
+
+
 
 
  
 
 button {
+    
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -89,7 +91,7 @@ button {
     overflow: hidden;
     outline:none;
     font-family: 'Newsreader', serif;
-    font-size: 18px;
+    font-size: 25px;
 }
  
 
@@ -173,15 +175,16 @@ nav button:nth-child(3):hover ~ #indicator
 
  
 @media only screen and (max-width: 680px) {
-	.main_imageSection { 
+	/* .main_imageSection { 
 		display: none;
-	}
+	} */
     .content-body{
+
         align-items: left;
         width: 300px ;
     }
     .menu nav {
-        width: 420px;
+        width: 20px;
         
     }
     #content-home-page{
@@ -195,17 +198,35 @@ nav button:nth-child(3):hover ~ #indicator
         top: 60%;
         left: 50%;
         transform: translate(-50%,-50%);
-
-        
+        background-color: #292929;
+        /* Ändra så flex går som column och bli mindre
+        meny ska gå neråt
+        */
+    }
+    button{
+       
     }
 
    
 }
+@media only screen and (max-width: 1450px){
+    button{
+        font-size: 15px;
+    }
 
-/* @media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
-    
-}  */
+}
+@media only screen and (max-width: 1000px){
+    button{
+        font-size: 10px;
+    }
+    .content-body{
+        background-color: #292929;
+
+    }
+
+}
+
+
  
 
 
