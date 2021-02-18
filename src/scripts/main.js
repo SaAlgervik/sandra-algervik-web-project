@@ -20,6 +20,11 @@ function changeImageToAbout(changeToImage){
 
 
 
+
+
+
+
+
 function hideContent(contentToHide,contentToShow){
     
     var x = document.getElementById(contentToHide);
