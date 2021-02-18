@@ -33,6 +33,12 @@ Started adding some function to the buttons and learning how to implement JavaSc
 
 Deleted all the files and started again with the Log in and made it work in a new index.html file but i can't add new users and did not really find out the way to do it. 
 
+### Thursday 2021-05-18
+
+After spending about 5-8 h on making the log in halfway work i decided that i did not want to just throw all that time away. So after changing some things in my html file and edited some css i started to fix the log in so it works. And now it does
+
+
+
 
 
 
