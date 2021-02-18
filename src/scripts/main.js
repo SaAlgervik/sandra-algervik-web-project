@@ -10,6 +10,10 @@ function checkSelected(selected){
     if(selected === "ABOUT"){
         changeImageToAbout(aboutPageImage);
     }
+    if (selected ==="LOG IN"){
+        
+
+    }
 }
 
 function changeImageToAbout(changeToImage){
@@ -17,11 +21,6 @@ function changeImageToAbout(changeToImage){
    document.getElementsByClassName('main_imageSection')[0].style.backgroundImage  = `url(${changeToImage}) `;
     
 }
-
-
-
-
-
 
 
 

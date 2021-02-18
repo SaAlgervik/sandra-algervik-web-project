@@ -17,7 +17,7 @@
   <body>
     <div class="container">
 
-
+<!--008wsbNqyOhIpXk4oQHRdQyBlam2KtNbb1Zc5g8baK-->
       <h1 class="text-center">Simple Web Page</h1>
       <div id="messageBox" class="jumbotron">
         You are not logged in. Get outta here! Shoo! >:S
@@ -28,13 +28,13 @@
     </div>
     <script type="text/javascript">
 
-       const oktaSignIn = new OktaSignIn({
-        baseUrl: "https://dev-96339714.okta.com",
-        clientId: "DITT_CLIENTID",
+const oktaSignIn = new OktaSignIn({
+        baseUrl: "https://dev-96642500.okta.com",
+        clientId: "0oa6wuf8baF8ZKiBy5d6",
         authParams: {
-          issuer: "https://dev-96339714.okta.com/oauth2/default"
+          issuer: "https://dev-96642500.okta.com/oauth2/default"
         },
-        redirectUri: 'http://localhost:8080'
+        redirectUri: 'http://127.0.0.1:8080/LogIn.html'
       });
 
       oktaSignIn.authClient.token.getUserInfo().then(function(user) {
