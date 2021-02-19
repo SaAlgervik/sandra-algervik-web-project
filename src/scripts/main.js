@@ -11,7 +11,7 @@ function checkSelected(selected){
         changeImage(aboutPageImage);
     }
     if (selected ==="LOG IN"){
-        window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html',
+        window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
 
     }
 }
