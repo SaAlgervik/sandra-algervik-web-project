@@ -5,18 +5,18 @@ function checkSelected(selected){
 
     if(selected === "HOME"){
       
-        changeImageToAbout(homePageImage);
+        changeImage(homePageImage);
     }
     if(selected === "ABOUT"){
-        changeImageToAbout(aboutPageImage);
+        changeImage(aboutPageImage);
     }
     if (selected ==="LOG IN"){
-        
+        window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html',
 
     }
 }
 
-function changeImageToAbout(changeToImage){
+function changeImage(changeToImage){
     
    document.getElementsByClassName('main_imageSection')[0].style.backgroundImage  = `url(${changeToImage}) `;
     
