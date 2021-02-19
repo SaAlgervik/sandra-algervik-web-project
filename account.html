@@ -32,7 +32,7 @@ const oktaSignIn = new OktaSignIn({
         authParams: {
           issuer: "https://dev-96642500.okta.com/oauth2/default"
         },
-        redirectUri: 'https://saalgervik.github.io/sandra-algervik-web-project/index.html'
+        redirectUri: 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
       });
 
       oktaSignIn.authClient.token.getUserInfo().then(function(user) {
@@ -48,6 +48,8 @@ const oktaSignIn = new OktaSignIn({
           const idToken = tokens.idToken;
           document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
           document.getElementById("logout").style.display = 'block';
+
+          //lägg till en funktion som väntar 10 sekunder sedan ändrar tillbaka till index.html
 
         }).catch(function(err) {
           console.error(err);
