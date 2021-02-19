@@ -32,7 +32,7 @@ const oktaSignIn = new OktaSignIn({
         authParams: {
           issuer: "https://dev-96642500.okta.com/oauth2/default"
         },
-        redirectUri: 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
+        redirectUri: 'https://saalgervik.github.io/sandra-algervik-web-project/index.html'
       });
 
       oktaSignIn.authClient.token.getUserInfo().then(function(user) {
