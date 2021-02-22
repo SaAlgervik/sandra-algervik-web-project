@@ -39,8 +39,8 @@ function hideContent(contentToHide,contentToShow){
       y.style.display = "block";
     } 
 }
-const fetch = require('node-fetch');
 async function API(){
+    const fetch = require('node-fetch');
     
     (async () => {
         const response = await fetch('https://trefle.io/api/v1/plants?token=UNtHDVWT5IrPmEf_BU3e6tjfn5Pivp_ivbt2MSWIETs');

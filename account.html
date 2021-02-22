@@ -10,8 +10,6 @@
     <script src="https://global.oktacdn.com/okta-signin-widget/5.1.5/js/okta-sign-in.min.js" type="text/javascript"></script>
     <link href="https://global.oktacdn.com/okta-signin-widget/5.1.5/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="./src/styles/account.css">
-    <script src="./src/scripts/main.js"></script>
-
   </head>
   <body>
     <div class="container">
@@ -36,10 +34,10 @@ const oktaSignIn = new OktaSignIn({
         authParams: {
           issuer: "https://dev-96642500.okta.com/oauth2/default"
         },
+        redirectUri: 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
       });
-      
+
       oktaSignIn.authClient.token.getUserInfo().then(function(user) {
-        redirectUri: 'https://saalgervik.github.io/sandra-algervik-web-project/index.html'
         document.getElementById("messageBox").innerHTML = "Hello, " + user.email + "! You are *still* logged in! :)";
         document.getElementById("logout").style.display = 'block';
       }, function(error) {
@@ -61,8 +59,6 @@ const oktaSignIn = new OktaSignIn({
       function logout() {
         oktaSignIn.authClient.signOut();
         location.reload();
-        window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/index.html'
-
       }
     </script>
   </body>
