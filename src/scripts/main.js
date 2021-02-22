@@ -12,9 +12,14 @@ function checkSelected(selected){
     }
     if (selected ==="LOG IN"){
         window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
+        
 
     }
+    if(selected === 'load data'){
+        AIP();
+       }
 }
+
 
 function changeImage(changeToImage){
     
@@ -34,11 +39,18 @@ function hideContent(contentToHide,contentToShow){
       y.style.display = "block";
     } 
 }
-
-function aboutButtonClick(){
-// hideContent("content-home-page", "about-page-content");
- hideContent("home-page-picture","about-page-picture");
+const fetch = require('node-fetch');
+async function API(){
+    
+    (async () => {
+        const response = await fetch('https://trefle.io/api/v1/plants?token=UNtHDVWT5IrPmEf_BU3e6tjfn5Pivp_ivbt2MSWIETs');
+        const json = await response.json();
+        console.log(json);
+    })();
 }
+AIP()
+
+
 
 
 

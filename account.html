@@ -21,6 +21,8 @@
       </div>
     
       <!-- where the sign-in form will be displayed -->
+
+      
       <div id="okta-login-container"></div>
       <button id="logout" class="button" onclick="logout()" style="display: none">Logout</button>
     </div>
@@ -57,7 +59,7 @@ const oktaSignIn = new OktaSignIn({
       function logout() {
         oktaSignIn.authClient.signOut();
         location.reload();
-    
+        window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/index.html'
 
       }
     </script>

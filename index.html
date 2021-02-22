@@ -1,3 +1,7 @@
+
+
+<!--UNtHDVWT5IrPmEf_BU3e6tjfn5Pivp_ivbt2MSWIETs-->
+<!-- curl 'https://trefle.io/api/v1/plants?token=UNtHDVWT5IrPmEf_BU3e6tjfn5Pivp_ivbt2MSWIETs&page=2' -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,20 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = stylesheet href="./src/styles/style.css">
     <script src="./src/scripts/main.js"></script>
-    <!-- Okta -->
-
-    <script src="https://global.oktacdn.com/okta-signin-widget/5.1.5/js/okta-sign-in.min.js" type="text/javascript"></script>
-    <link href="https://global.oktacdn.com/okta-signin-widget/5.1.5/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
-   
+    <script src="./src/scripts/api.js"></script>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
-   
-
     <title>Document</title>
 </head>
 <div id="wrapper">
 
     <body >
+        
+        
         
          <div class="content-body">
              <div class="main">
@@ -30,6 +31,8 @@
                          <button type="button" onclick="checkSelected('ABOUT')"> ABOUT</button>
 
                         <button type="button" onclick="checkSelected('LOG IN')"> LOG IN</button>
+
+                        <button type="button" onclick="checkSelected('load data')"> SHOW DATA</button>
 
                         <div id="indicator"></div> 
                     </nav>

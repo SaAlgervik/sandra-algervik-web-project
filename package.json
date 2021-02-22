@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "@okta/okta-signin-widget": "^5.1.5"
+    "@okta/okta-signin-widget": "^5.1.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.1"
   }
 }
