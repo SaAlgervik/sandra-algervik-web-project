@@ -37,9 +37,15 @@ Deleted all the files and started again with the Log in and made it work in a ne
 
 After spending about 5-8 h on making the log in halfway work i decided that i did not want to just throw all that time away. So after changing some things in my html file and edited some css i started to fix the log in so it works. And now it does
 
+### Friday 2021-05-18
+
+started the day with styling log in page and added the function so the page opens when you press the button "LOG IN". Spent the rest of the day reading about the API i wanted to use
 
 
 
+### Monday 2021-05-18
+
+Spent the whole day tying 10 ways to get info from my api, just got error messages from the console all day. After about 6h i found out that you need a local server to get it to work. After that did everything wrong that i could and now at half past 6 i finally got the server working. Tomorrow i will start with getting the info from the API.
 
 
 

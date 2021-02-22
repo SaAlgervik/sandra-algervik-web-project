@@ -1,4 +1,14 @@
+#okta-login-container{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
 
+}
+.container{
+  background-color: aqua;
+}
 h1 {
   margin: 2em 0;
 }
