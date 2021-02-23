@@ -49,6 +49,14 @@ Spent the whole day tying 10 ways to get info from my api, just got error messag
 
 
 
+### Tuesday 2021-02-23
+
+
+
+
+
+
+
 
 
 
