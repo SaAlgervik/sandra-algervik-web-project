@@ -1,3 +1,4 @@
+
 const homePageImage ="https://images.unsplash.com/photo-1503924087716-07cbd5f49b21?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=8";
 const aboutPageImage = "https://images.pexels.com/photos/789812/pexels-photo-789812.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
 
@@ -10,14 +11,22 @@ function checkSelected(selected){
     if(selected === "ABOUT"){
         changeImage(aboutPageImage);
     }
-    if (selected ==="LOG IN"){
-        window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
-        
-
+    if (selected ==="LOG IN" ){
+       window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
+      
     }
-    if(selected === 'load data'){
-        // AIP();
-       }
+   
+   
+}
+
+function logBotton(logInput){
+    if(logInput === 'LOG IN'){
+        document.getElementById('loginBtn').textContent = 'LOG OUT'
+    }
+    else if(logInput ==='LOG OUT'){
+        document.getElementById('loginBtn').textContent = 'LOG OUT'
+    }
+    
 }
 
 
@@ -26,40 +35,77 @@ function changeImage(changeToImage){
    document.getElementsByClassName('main_imageSection')[0].style.backgroundImage  = `url(${changeToImage}) `;
     
 }
-
+function changeImage(changeToImage){
+    
+    document.getElementsByClassName('main_imageSection')[0].style.backgroundImage  = `url(${changeToImage}) `;
+     
+ }
 
 
 function hideContent(contentToHide,contentToShow){
     
     var x = document.getElementById(contentToHide);
     var y = document.getElementById
-   (contentToShow);
+    (contentToShow);
     if (x.style.display === y.style.display) {
-      x.style.display = "none";
-      y.style.display = "block";
+        x.style.display = "none";
+        y.style.display = "block";
     } 
 }
-async function API(){
-    const fetch = require('node-fetch');
-    
-    (async () => {
-        const response = await fetch('https://trefle.io/api/v1/plants?token=UNtHDVWT5IrPmEf_BU3e6tjfn5Pivp_ivbt2MSWIETs');
-        const json = await response.json();
-        console.log(json);
-    })();
+
+
+
+
+ //                 //
+//      AXIOS      //
+
+
+
+function submitText(){
+    var inputText = document.getElementById("common_name").value;
+    console.log(inputText);
+    document.getElementById("common_name").value = null;
+    getCommonName(inputText);
 }
-// AIP()
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('An alligator approaches!');
-});
-
-app.listen(3000, () => console.log('Gator app listening on port 3000!'));
 
 
 
 
+function getCommonName(inputText) {
+    inputText = req.query;
+    axios
+      .get("/getcommmon_name", {
+        params: {
+          inputText
+        }
+      })
+     .then(function(response)  {
+          inputText =response.data.response.inputText;
+          
+   });
+     
+  }
 
+
+//   if (response.data.response.success === 1) {
+//     passSteamID(steamID);
+//   } else {
+//     showInfo(false);
+//     console.log("No user with that vanityID found");
+//   }
+// });
+// }
+
+
+
+
+
+
+//   function passFormData(inputValue) {
+//     if (isValidIDFormat(inputValue)) {
+//       passSteamID(inputValue);
+//     } else {
+//       getSteamID(inputValue);
+//     }
+//   }
 

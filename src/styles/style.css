@@ -49,8 +49,9 @@ body{
 .menu nav {
     width: 100% ;
     padding: 1rem;
-    
+    height: 4rem;
 }
+
 .main_textSection{
     flex: 1;
     padding: 1rem;
@@ -69,7 +70,7 @@ body{
 }
 .textSection_image{
    
-    height: 100px;
+    height: 50px;
     background-color: blue;
     width: 100%;
     
@@ -94,8 +95,10 @@ button {
     overflow: hidden;
     outline:none;
     font-family: 'Newsreader', serif;
-    font-size: 120%;
+    font-size: 20px;
 }
+
+
  
 nav button
 {
@@ -195,64 +198,6 @@ nav button:nth-child(3):hover ~ #indicator
 
 
  
-@media only screen and (max-width: 680px) {
-	
-    .content-body{
-        
-        width: 500px ;
-        
-    }
-    
-    .main{
-        background-color: #292929;
-
-    }
-    .main_textSection{
-        
-        flex: 1;
-        padding: 1rem;
-        width: 400px;
-        max-height: 600px;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%,-50%); 
-        /* Ändra så flex går som column och bli mindre
-        meny ska gå neråt
-       
-       */
-
-    }
-    
-     .main_imageSection { 
-		display: none;
-	} 
-    button{
-        font-size: 15px;
-    }
-    .content-body{
-        background-color: #292929;
-
-    }
-   
-}
-/* 
-@media only screen and (max-width: 1450px){
-        button{
-            font-size: 95%
-        }
-}
-@media only screen and (max-width: 1000px){
-   }
-    .content-body{
-        background-color: #292929;
-
-    }
-    button{
-        font-size: 0,5rem;
-    }
-
-} */
 
 
  
