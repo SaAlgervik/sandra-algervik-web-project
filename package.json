@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start" : "node ./src/server.js"
+  },
   "dependencies": {
     "@okta/okta-signin-widget": "^5.1.5",
     "axios": "^0.21.1",
