@@ -7,18 +7,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = stylesheet href="./src/styles/style.css">
+    <link rel = stylesheet href="./styles/style.css">
+    <script src="./scripts/main.js"></script>
 
-    <script src="./src/scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <!--search form-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--Fonts for the site-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts. gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <div id="wrapper">
 
-    <body >
-        
+    <body onload="start()">
         <div class="content-body">
              <div class="main">
                 <div class="menu">
@@ -27,20 +29,31 @@
 
                          <button type="button" onclick="checkSelected('ABOUT')"> ABOUT</button>
 
-                        <button  type="button" onclick="checkSelected('LOG IN')"> LOG IN</button>
+                        <button  type="button" onclick="checkSelected('API')"> API</button>
 
                         <div id="indicator"></div> 
                     </nav>
                 </div>
 
-                <div class="main_textSection"> 
-                 <h2>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis officiis non quaerat eius molestias sequi, alias rem laborum quibusdam obcaecati earum aut saepe amet dolorem esse laboriosam autem eligendi. Fugiat dolor quis consectetur nemo incidunt! Corporis in molestiae enim minima porro ipsum esse similique voluptates quod numquam rem nobis delectus qui veritatis et, neque assumenda non? Harum, aliquid sit non eos placeat explicabo necessitatibus ad dolorum nostrum accusantium hic asperiores nemo fugiat, nam laudantium fuga! Placeat neque consequuntur praesentium nulla similique soluta ducimus facere ad, animi, pariatur maiores nihil deleniti sequi quasi? Neque, obcaecati commodi recusandae esse, consequatur, ducimus corporis at optio ipsam eius incidunt explicabo. Earum saepe est quisquam temporibus at. Magnam, totam! Dolore a, in cum voluptates dicta ipsum blanditiis natus officia, sequi aliquid, laborum . </h2>
+                <div class="main_textSection">
+                    <h2 id="home_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut vitae, similique repellendus veniam impedit iusto tenetur dolores sint deserunt, assumenda in quia delectus. Blanditiis laudantium velit excepturi quaerat a.    
+                    </h2>
+                    <h2 id="about_text" >
+                        sandra gillar glass
+                        Jag älskar klass
+                    </h2>
+                    <div id="plant_name"></div>
                 </div>
-                <div class="textSection_image">
+
+                <div class="textSection_search">
+                    <!-- <form action="">
+                    </form>    -->
                     
-                <input type="text" id="common_name" placeholder="Search Plants">
-                <button style="background-color: brown; padding: 10px ;" type="button" value="SEND" id="sendBtn" onclick="submitText()">submit</button>
+                    <input type="text" onkeydown="keyEnter(event)" id="common_name"
+                     placeholder="Search Plants">
+
+                <button type="button" value="SEND" id="sendBtn" onclick="submitText()">Submit</button>
                     
                 </div>
             </div>
@@ -48,9 +61,6 @@
                 <div class="main_imageSection"></div>
                 
          </div>
-
-           
-       
     </body>
 </div>
 </html> 

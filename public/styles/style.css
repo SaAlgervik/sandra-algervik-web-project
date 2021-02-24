@@ -68,13 +68,7 @@ body{
     -ms-overflow-style: none; 
     scrollbar-width: none; 
 }
-.textSection_image{
-   
-    height: 50px;
-    background-color: blue;
-    width: 100%;
-    
-}
+
 .main_imageSection{
     background-image: url(https://images.unsplash.com/photo-1503924087716-07cbd5f49b21?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=8);
     background-position: center;
@@ -85,6 +79,62 @@ body{
     border-bottom-right-radius: 10px;
   
 }
+
+.textSection_search{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+/* form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 150px;
+    height: 20px;
+    background:#292929;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 1px solid #292929;
+    padding: 8px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+
+
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+} */
+
+
+/*****Menu******/
 
 button {
     

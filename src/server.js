@@ -28,5 +28,5 @@ app.get('/getcommon_name', function (req, res) {
 });
 
 app.listen(port, function () {
-    console.log('Gator app listening on port!' + port)
+    console.log('listening on port!' + port)
 });
