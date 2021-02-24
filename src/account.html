@@ -38,7 +38,7 @@ const oktaSignIn = new OktaSignIn({
         features:{
           registration: true
         },
-        redirectUri: 'https://saalegrvik-web-project.herokuapp.com/account.html'
+        redirectUri: 'https://saalegrvik-web-project.herokuapp.com/src/account.html'
       });
 
       oktaSignIn.authClient.token.getUserInfo().then(function(user) {
