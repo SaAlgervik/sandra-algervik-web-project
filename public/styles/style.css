@@ -79,6 +79,10 @@ body{
     border-bottom-right-radius: 10px;
   
 }
+#plant_name:hover{
+    cursor: pointer;
+
+}
 
 .textSection_search{
     display: flex;
