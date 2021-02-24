@@ -24,7 +24,7 @@ function checkSelected(selected) {
     }
     if (selected === "API") {
          //detta va längen för log in sidan som skulle vart med ifrån början//  
-        window.location.href = 'https://saalegrvik-web-project.herokuapp.com/account.html'
+        window.location.href = 'https://saalegrvik-web-project.herokuapp.com/src/account.html'
         // displayAPIsearch();
 
     }
