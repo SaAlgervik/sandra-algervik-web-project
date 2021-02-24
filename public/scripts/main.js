@@ -24,8 +24,8 @@ function checkSelected(selected) {
     }
     if (selected === "API") {
          //detta va längen för log in sidan som skulle vart med ifrån början//  
-        //window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
-        displayAPIsearch();
+        window.location.href = 'https://saalegrvik-web-project.herokuapp.com/account.html'
+        // displayAPIsearch();
 
     }
 
@@ -109,8 +109,8 @@ function getCommonName(inputText) {
                     plantName.addEventListener('click', function () {
                     changeMainImage(currentImage);
                 });
-                plantName.style = "font-size: 23px" 
-                plantName.style ="padding-bottom: 10px"
+                // plantName.style = "font-size: 23px" 
+                // plantName.style ="padding-bottom: 10px"
 
                 mainTextRef.appendChild(plantName); 
 
