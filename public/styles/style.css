@@ -46,18 +46,7 @@ body{
     background-color: rgba(58, 58, 56, 0.541);
     border-radius: 10px; 
 }
-.menu nav {
-    width: 100% ;
-    padding: 1rem;
-    height: 4rem;
-}
-nav
-{
-    
-   
-    
-    display: table;
-}
+
 .main_textSection{
     flex: 1;
     padding: 1rem;
@@ -87,19 +76,56 @@ nav
 }
 #plant_name:hover{
     cursor: pointer;
-
 }
+
 #plant_name{
-    
     font-size: 23px; 
     padding-bottom: 15px
 }
+
+#common_name{
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 1px;
+    color: white;
+    background-color: #292929;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+input:focus{
+    outline: none;
+}
+
+
+#sendBtn{
+    position: relative;
+    left: 30%;
+    transform: translate(-50%,-40%);
+}
+
+
+
+
+
+
 
 
 
 
 
 /*****Menu******/
+.menu nav {
+    width: 100% ;
+    padding: 1rem;
+    height: 4rem;
+}
+nav
+{
+    display: table;
+}
 
 button {
     
@@ -112,6 +138,7 @@ button {
     font-family: 'Newsreader', serif;
     font-size: 20px;
 }
+
 
 
  
@@ -223,13 +250,41 @@ nav button:nth-child(3):hover ~ #indicator
   }
   @media only screen and (max-width: 630px) {
     .main_imageSection{
-        display: none;
+        width: 100%;
+        border-radius: 0px;
+        border-bottom-right-radius:10px ;
+        border-bottom-left-radius:10px ;
+
     }
     .main{
         width: 100%; 
 
      
     }
+   
+    #sendBtn{
+        
+        position: relative;
+        left: 20%;
+        transform: translate(-50%,-80%);
+    
+    }
+    #common_name{
+        padding:3px;
+        position: relative;
+        left: 40%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .content-body {
+        display: flex;
+        -webkit-box-flex: 1;
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+        width: 70%;
+    }
+    
 
    
   }

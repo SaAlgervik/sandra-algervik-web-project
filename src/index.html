@@ -11,8 +11,7 @@
     <script src="./scripts/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-    <!--search form-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ 
     <!--Fonts for the site-->
     <link rel="preconnect" href="https://fonts. gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
@@ -40,21 +39,19 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut vitae, similique repellendus veniam impedit iusto tenetur dolores sint deserunt, assumenda in quia delectus. Blanditiis laudantium velit excepturi quaerat a.    
                     </h2>
                     <h2 id="about_text" >
-                        sandra gillar glass
-                        Jag älskar klass
+                      Hej, glass är gött
                     </h2>
                     <div id="plant_name"></div>
                 </div>
 
                 <div class="textSection_search">
-                    <!-- <form action="">
-                    </form>    -->
-                    
-                    <input type="text" onkeydown="keyEnter(event)" id="common_name"
-                     placeholder="Search Plants">
 
-                <button type="button" value="SEND" id="sendBtn" onclick="submitText()">Submit</button>
-                    
+                    <input type="text" onkeydown="keyEnter(event)" 
+                     id="common_name"
+                     placeholder="Search Plants"
+                     onfocus="this.placeholder=''" 
+                     onblur="this.placeholder='Search Plants'">
+
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 const homePageImage = "https://images.unsplash.com/photo-1503924087716-07cbd5f49b21?ixlib=rb-1.2.1&ixid" +"=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=8";
 const aboutPageImage = "https://images.pexels.com/photos/789812/pexels-photo-789812.jpeg?auto=compress&c" +"s=tinysrgb&dpr=1&w=500";
-
+const APIpageImage ="https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 
 
 function checkSelected(selected) {
@@ -23,8 +23,9 @@ function checkSelected(selected) {
 
     }
     if (selected === "API") {
+        changeMainImage(APIpageImage);
          //detta va längen för log in sidan som skulle vart med ifrån början//  
-        // window.location.href = 'https://saalegrvik-web-project.herokuapp.com/src/account.html'
+        //window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
         displayAPIsearch();
 
     }
@@ -80,20 +81,19 @@ function changeMainImage(imageSource) {
 }
 
 function clearText(){
-    document.getElementById('plant_names').innerHTML = "";
+    document.getElement('plant_names').innerHTML = "";
 }
 
 // hämtar data från API via axios
 function getCommonName(inputText) {
+    
     axios
         .get("/getcommon_name", {params: {
             inputText
         }})
         .then((response) => {
             const {data} = response.data
-            console.log(data)
             //lägger in common name på växterna och ett onclick event på texten som sedan visar bilden
-
             let i = 0
             do {
                 var mainTextRef = document.getElementById('plant_name')
@@ -109,8 +109,7 @@ function getCommonName(inputText) {
                     plantName.addEventListener('click', function () {
                     changeMainImage(currentImage);
                 });
-                // plantName.style = "font-size: 23px" 
-                // plantName.style ="padding-bottom: 10px"
+               
 
                 mainTextRef.appendChild(plantName); 
 

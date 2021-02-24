@@ -45,11 +45,18 @@ started the day with styling log in page and added the function so the page open
 
 ### Monday 2021-05-18
 
-Spent the whole day tying 10 ways to get info from my api, just got error messages from the console all day. After about 6h i found out that you need a local server to get it to work. After that did everything wrong that i could and now at half past 6 i finally got the server working. Tomorrow i will start with getting the info from the API.
+Spent the whole day tying 10 ways to get info from my API, just got error messages from the console all day. After about 6h i found out that you need a local server to get it to work. After that did everything wrong that i could and now at half past 6 i finally got the server working. Tomorrow i will start with getting the info from the API.
 
 
 
 ### Tuesday 2021-02-23
+
+After FINALLY  getting why the server wasn't working because the structure of my things wasn't  the same as the examples i was looking at i now made it work as i wanted it to, now I'm able to get the stuff i want from the API and the things i have left to do tomorrow is just to find a nice way of representing it tomorrow. I have renamed stuff and deleted the code i don't need. Still some renaming and stuff to fix to make it perfect but thats some work for tomorrow. 
+
+### Wednesday 2021-02-24
+
+Made the API show the content i wanted, made it show up on the places i should.
+Made the site work on Mobile as good as an can and will make it a bit better tomorrow. The rest of the day i user to make the search field look as i wanted it too. Styled the text that i get from the API and tomorrow i will do the text for the pages. I now host it om Heroku instead of Github Pages because of the server. Unfortunately the server do not work on Github pages but the Log in Page does and the outer way around on Heroku. But because the log in is not needed i won't spend time trying to fix it if i don't have time over when I'm finished  whit everything else in time!
 
 
 
