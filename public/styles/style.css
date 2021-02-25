@@ -277,12 +277,14 @@ nav button:nth-child(3):hover ~ #indicator
         transform: translate(-50%,-50%);
     }
     #home_text{
+        font-size: 18px;
         height: 200px;
         overflow: hidden;
         overflow: scroll;
 
     }
     #about_text{
+        font-size: 18px;
         height: 200px;
         overflow: hidden;
         overflow: scroll;
