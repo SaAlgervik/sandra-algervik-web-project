@@ -277,13 +277,13 @@ nav button:nth-child(3):hover ~ #indicator
         transform: translate(-50%,-50%);
     }
     #home_text{
-        height: 350px;
+        height: 300px;
         overflow: hidden;
         overflow: scroll;
 
     }
     #about_text{
-        height: 350px;
+        height: 300px;
         overflow: hidden;
         overflow: scroll;
     }
