@@ -21,7 +21,7 @@ function checkSelected(selected) {
         changeMainImage(APIpageImage);
         displayAPISearch();
 
-         //detta va längen för log in sidan som skulle vart med ifrån början//  
+         //This was the log in site that should have been added//  
         //window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
     }
 }
