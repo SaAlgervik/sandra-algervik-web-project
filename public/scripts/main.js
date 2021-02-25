@@ -6,7 +6,7 @@ const APIpageImage ="https://images.pexels.com/photos/1055379/pexels-photo-10553
 function checkSelected(selected) {
 
     if (selected === "HOME") {
-
+        clearText();
         changeMainImage(homePageImage);
         changeMainText('about_text','home_text');
         document.getElementsByClassName("textSection_search")[0].style.display ="none";
@@ -16,6 +16,7 @@ function checkSelected(selected) {
 
     }
     if (selected === "ABOUT") {
+        clearText();
         changeMainImage(aboutPageImage);
         changeMainText('home_text', 'about_text');
         document.getElementsByClassName("textSection_search")[0].style.display ="none";
@@ -24,13 +25,15 @@ function checkSelected(selected) {
     }
     if (selected === "API") {
         changeMainImage(APIpageImage);
-         //detta va längen för log in sidan som skulle vart med ifrån början//  
-        //window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
         displayAPIsearch();
 
-    }
 
+         //detta va längen för log in sidan som skulle vart med ifrån början//  
+        //window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
+
+    }
 }
+
 
 function changeMainText(hide, show){
     document.getElementById(hide).style.display ="none";
@@ -72,6 +75,7 @@ function keyEnter(event){
 function submitText() {
     var inputText = document.getElementById("common_name").value;
     document.getElementById("common_name").value = null;
+    clearText()
     getCommonName(inputText);
 }
 //
@@ -81,7 +85,16 @@ function changeMainImage(imageSource) {
 }
 
 function clearText(){
-    document.getElement('plant_names').innerHTML = "";
+    if(document.getElementsByClassName('common_name').length !=0){
+        let  i = 0;
+
+         do{
+             const list = document.getElementsByClassName('common_name')[i]
+             list.innerHTML = "";
+             
+            i++
+         }while(i < document.getElementsByClassName('common_name').length)
+    }
 }
 
 // hämtar data från API via axios
@@ -98,10 +111,9 @@ function getCommonName(inputText) {
             do {
                 var mainTextRef = document.getElementById('plant_name')
                 const currentImage = data[i].image_url
-                
                 const plantName = document.createElement("h2");
                 plantName.innerHTML = data[i].common_name
-
+                
                 plantName
                     .classList
                     .add('common_name')
