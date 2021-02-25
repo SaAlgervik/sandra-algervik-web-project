@@ -88,7 +88,7 @@ function getCommonName(inputText) {
         }})
         .then((response) => {
             const {data} = response.data
-            //lägger in common name på växterna och ett onclick event på texten som sedan visar bilden
+            //adds common_name with eventlisener to display picture onclick
             let i = 0
             do {
                 var mainTextRef = document.getElementById('plant_name')
