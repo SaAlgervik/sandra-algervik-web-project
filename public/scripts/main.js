@@ -79,7 +79,8 @@ function clearText(){
     }
 }
 
-// Gets data from API by axios
+// Sends the data fom main.js to server then gets the data back and adds it to the pant_name//
+//id in the frontend
 function getCommonName(inputText) {
     
     axios
@@ -88,7 +89,7 @@ function getCommonName(inputText) {
         }})
         .then((response) => {
             const {data} = response.data
-            //adds common_name with eventlisener to display picture onclick
+            //adds common_name response with eventlisener to display picture onclick in #plant_name
             let i = 0
             do {
                 var mainTextRef = document.getElementById('plant_name')
