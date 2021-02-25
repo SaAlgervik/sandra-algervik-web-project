@@ -1,2 +1,3 @@
 # Sandra Algervik Web Project
-Projekt webbutveckling
+
+To open the webside go to: https://saalegrvik-web-project.herokuapp.com/
