@@ -7,17 +7,18 @@ function checkSelected(selected) {
     if (selected === "HOME") {
         clearText();
         changeMainImage(homePageImage);
-        changeMainText('about_text',"plant_name",'home_text');
+        changeMainText('about_text','home_text');
+        hideAPISerch();
     }
     if (selected === "ABOUT") {
         clearText();
         changeMainImage(aboutPageImage);
-        changeMainText('home_text',"plant_name", 'about_text');
+        changeMainText('home_text', 'about_text');
+        hideAPISerch();
 
     }
     if (selected === "API") {
         changeMainImage(APIpageImage);
-        changeMainText('home_text','about_text','plant_name' );
         displayAPISearch();
 
          //detta va längen för log in sidan som skulle vart med ifrån början//  
@@ -26,14 +27,19 @@ function checkSelected(selected) {
 }
 
 
-function changeMainText(firstToHide,secondToHide, show){
-    document.getElementById(firstToHide).style.display ="none";
-    document.getElementById(secondToHide).style.display ="none";
+function changeMainText(hide, show){
+    document.getElementById(Hide).style.display ="none";
     document.getElementById(show).style.display ="block";
 }
 
 function displayAPISearch(){
     document.getElementsByClassName("textSection_search")[0].style.display ="block";
+    document.getElementById("plant_name").style.display ="block";
+
+}
+function hideAPISerch(){
+    document.getElementsByClassName("textSection_search")[0].style.display ="none";
+    document.getElementById("plant_name").style.display ="none";
 
 }
 
