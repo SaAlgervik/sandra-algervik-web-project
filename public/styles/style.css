@@ -52,6 +52,8 @@ body{
     padding: 1rem;
     text-align: center;
     overflow: scroll;
+    font-size: 23px;
+    letter-spacing: 2px;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .main_textSection::-webkit-scrollbar /*,.Kort::-webkit-scrollbar*/ {
@@ -62,6 +64,11 @@ body{
 .main_textSection {
     -ms-overflow-style: none; 
     scrollbar-width: none; 
+}
+
+
+a{
+    color: rgb(204, 164, 236);
 }
 
 .main_imageSection{
@@ -78,10 +85,7 @@ body{
     cursor: pointer;
 }
 
-#plant_name{
-    font-size: 23px; 
-    padding-bottom: 15px
-}
+
 
 #common_name{
     padding: 3px;
@@ -258,12 +262,9 @@ nav button:nth-child(3):hover ~ #indicator
     }
     .main{
         width: 100%; 
-
-     
     }
    
     #sendBtn{
-        
         position: relative;
         left: 20%;
         transform: translate(-50%,-80%);
@@ -275,7 +276,23 @@ nav button:nth-child(3):hover ~ #indicator
         left: 40%;
         transform: translate(-50%,-50%);
     }
-    
+    #home_text{
+        height: 350px;
+        overflow: hidden;
+        overflow: scroll;
+
+    }
+    #about_text{
+        height: 350px;
+        overflow: hidden;
+        overflow: scroll;
+    }
+    /* #plant_name{
+        height: 350px;
+        overflow: hidden;
+        overflow: scroll;
+
+    } */
     .content-body {
         display: flex;
         -webkit-box-flex: 1;
@@ -284,8 +301,32 @@ nav button:nth-child(3):hover ~ #indicator
         height: 100%;
         width: 70%;
     }
+    #about_text::-webkit-scrollbar /*,.Kort::-webkit-scrollbar*/ {
+        display: none;
+    }
+    #home_text::-webkit-scrollbar /*,.Kort::-webkit-scrollbar*/ {
+        display: none;
+    }
+    #plant_name::-webkit-scrollbar /*,.Kort::-webkit-scrollbar*/ {
+        display: none;
+    }
     
-
+    /* Hide scrollbar for IE, Edge and Firefox */
+    #about_text {
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    #home_text {
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+  
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    #plant_name {
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
    
   }
 
