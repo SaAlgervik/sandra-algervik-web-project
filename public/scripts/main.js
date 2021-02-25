@@ -20,7 +20,7 @@ function checkSelected(selected) {
     if (selected === "API") {
         changeMainImage(APIpageImage);
         displayAPISearch();
-
+       
          //This was the log in site that should have been added//  
         //window.location.href = 'https://saalgervik.github.io/sandra-algervik-web-project/account.html'
     }
@@ -28,13 +28,17 @@ function checkSelected(selected) {
 
 
 function changeMainText(hide, show){
-    document.getElementById(Hide).style.display ="none";
+    document.getElementById(hide).style.display ="none";
     document.getElementById(show).style.display ="block";
 }
 
 function displayAPISearch(){
     document.getElementsByClassName("textSection_search")[0].style.display ="block";
     document.getElementById("plant_name").style.display ="block";
+    document.getElementById('home_text').style.display ="none";
+    document.getElementById('about_text').style.display ="none";
+
+
 
 }
 function hideAPISerch(){
