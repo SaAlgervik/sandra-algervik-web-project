@@ -58,6 +58,10 @@ After FINALLY  getting why the server wasn't working because the structure of my
 Made the API show the content i wanted, made it show up on the places i should.
 Made the site work on Mobile as good as an can and will make it a bit better tomorrow. The rest of the day i user to make the search field look as i wanted it too. Styled the text that i get from the API and tomorrow i will do the text for the pages. I now host it om Heroku instead of Github Pages because of the server. Unfortunately the server do not work on Github pages but the Log in Page does and the outer way around on Heroku. But because the log in is not needed i won't spend time trying to fix it if i don't have time over when I'm finished  whit everything else in time!
 
+### Thursday 2020-02-24
+
+This day i spent styling the last things an making the finishing touch on everything. Made some improvements on the functions, change some in the style so the flexboxes stays where they should. Made the Mobile fixes so the site responds as it should when changing the size of the window. Took some time to figure out how to make the input list from the API go away after a new search or when i changed the tabs.  Did my best to minimize the code so i don't have to reuse it a lot of times and sorted the .css so the styling is in the right order. I wrote and changed the text for the home and about page.
+
 
 
 
